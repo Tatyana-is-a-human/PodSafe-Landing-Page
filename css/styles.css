@@ -20,6 +20,10 @@ h4::first-line{
   color:#FF0000;
 }
 
+#above-fold{
+  padding-bottom: 200px;
+}
+
 .buttonCTA{
   background-color: #ff9062;
   border: none;
@@ -45,13 +49,24 @@ h4::first-line{
   position:static;
 }
 
-.test-img{
-  border-radius:100%;
-  margin:20px;
-  display:block;
+.carousel-inner{
+  align-items: center;
+  height:280px;
+}
+.carousel-item{
+  padding:60px;
 }
 
-.test-names{
+.test-img{
+  border-radius:100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height:150px;
+}
+
+.test-left-side{
   display:block;
   text-align:center;
 }
@@ -68,6 +83,10 @@ h4::first-line{
   letter-spacing: 10px;
 }
 
+.test-button{
+  background-color: #FF0000;
+}
+
 #press{
   background-color: #000000;
   color:#FFF6EE;
@@ -77,65 +96,4 @@ h4::first-line{
 .press-logo{
   width:100px;
   height:50px;
-}
-
-.sect-one{
-  background:#FFC145;
-  position:relative;
-  padding: 10vh;
-}
-
-
-.one__icon{
-  text-align:center;
-  background: #AA8000;
-  color: #FFFFFF;
-  width:100px;
-  height:100px;
-  margin: 0 auto;
-  border-radius:50%;
-  display: grid;
-  place-items: center;
-  z-index:1;
-}
-
-.sect-one::after,
-.sect-one::before{
-  position:absolute;
-  content: '';
-  width:60px;
-  height: 60px;
-  bottom:-10px;
-  background:#FFC145;
-}
-
-.sect-one::before{
-  transform: skew(0,20deg);
-  right: 50%;
-  z-index:0;
-}
-
-.sect-one::after{
-  transform: skew(0,-20deg);
-  left: 50%;
-  z-index:10;
-}
-
-
-.sect-two{
-  background:#DD7777;
-  padding: 10vh;
-}
-
-.two__img{
-  text-align:center;
-  border-radius:0;
-  width:400px;
-  height:400px;
-  clip-path:polygon(200px 0px, 400px 127px, 345px 400px, 55px 400px, 0px 127px);
-}
-
-.sect-three{
-  background:#4422EE;
-  padding: 10vh;
 }
