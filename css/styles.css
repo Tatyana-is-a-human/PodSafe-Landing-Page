@@ -1,14 +1,42 @@
+
 h1{
 font-family: 'Ultra', serif;
 letter-spacing: 3px;
+  color:#051060
+}
+
+h2{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 36px;
+    color:#051060
+}
+h3{
+  font-family: 'Ultra', serif;
+  letter-spacing:3px;
+  font-size: 32px;
+    color:#051060
+}
+h4{
+  font-family: 'Poppins';
+  font-size: 24px;
+    color:#051060
+}
+h5{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 36px;
+}
+
+h5::first-line{
+  /* this is a reminder to make an h5 text style since you've apparently decided to use it*/
+  color:#FF0000;
+}
+h6{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 36px;
 }
 
 p{
   font-family: 'Poppins', sans-serif;
-}
-
-h2,h3,h4,h5{
-  font-family: 'Libre Baskerville', serif;
 }
 
 body{
@@ -16,9 +44,7 @@ body{
   padding-top:40px;
   padding-bottom: 40px
 }
-h4::first-line{
-  color:#FF0000;
-}
+
 
 #above-fold{
   padding-bottom: 200px;
@@ -42,6 +68,19 @@ h4::first-line{
   border-radius: 80px
 }
 
+.product-card{
+  margin:30px;
+  padding:20px;
+  border-radius:20%;
+  background-color:#FFF6EE;
+}
+
+.product-card-img{
+  width:100;
+  aspect-ratio:1;
+  margin-bottom:20px;
+  border-radius:20px;
+}
 
 #testimonials{
   background-color: #000000;
