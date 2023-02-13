@@ -1,3 +1,8 @@
+section{
+  padding: 120px;
+  padding-top:40px;
+  padding-bottom: 40px
+}
 
 h1{
 font-family: 'Ultra', serif;
@@ -39,12 +44,6 @@ p{
   font-family: 'Poppins', sans-serif;
 }
 
-body{
-  padding: 120px;
-  padding-top:40px;
-  padding-bottom: 40px
-}
-
 
 #above-fold{
   padding-bottom: 200px;
@@ -65,13 +64,24 @@ body{
 }
 
 .first-image{
-  border-radius: 80px
+  border-radius: 80px;
+}
+
+.social-icons{
+  text-align: right;
+  font-size:1.5rem;
+  color:#051060;
+}
+
+#product-options{
+  background-color:#19299e;
+  padding-bottom:200px;
 }
 
 .product-card{
   margin:30px;
   padding:20px;
-  border-radius:20%;
+  border-radius:30px;
   background-color:#FFF6EE;
 }
 
@@ -80,6 +90,41 @@ body{
   aspect-ratio:1;
   margin-bottom:20px;
   border-radius:20px;
+}
+
+#mid-page-divider{
+  padding:0px;
+  background-color: #19299e;
+  height:0px;
+}
+
+.mid-page-divider-img{
+  postion:absolute;
+  width:33%;
+  top:200%
+
+}
+
+#benefits{
+  backgroud-color:#E9f4f6;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+.benefit{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height:300px;
+}
+
+.benefits-text{
+  text-align:center;
+  display:inline;
+  vertical-align: middle;
+}
+
+.benfits-img{
+  border-radius: 50px;
 }
 
 #testimonials{
@@ -91,9 +136,11 @@ body{
 .carousel-inner{
   align-items: center;
   height:280px;
+  color: #FFF6EE;
 }
 .carousel-item{
   padding:60px;
+  color:#FFF6EE;
 }
 
 .test-img{
@@ -110,17 +157,17 @@ body{
   text-align:center;
 }
 
-.test-quote::before{
+.test-quote::before, .test-quote::after{
   content:open-quote;
   font-size: 48px;
+  color:#FFF6EE;
   letter-spacing: 10px;
 }
 
-.test-quote::after{
-  content:close-quote;
-  font-size: 48px;
-  letter-spacing: 10px;
-}
+ .test-quote::after{
+   content:close-quote;
+ }
+
 
 .test-button{
   background-color: #FF0000;
@@ -135,4 +182,8 @@ body{
 .press-logo{
   width:100px;
   height:50px;
+}
+
+#footer{
+  background-color:#00FF00;
 }
