@@ -1,25 +1,26 @@
 section{
   padding: 120px;
   padding-top:40px;
-  padding-bottom: 40px
+  padding-bottom: 40px;
+  background-color:#19299e;
 }
 
 h1{
 font-family: 'Ultra', serif;
 letter-spacing: 3px;
-  color:#051060
+  color:#051060;
 }
 
 h2{
   font-family: 'Libre Baskerville', serif;
   font-size: 36px;
-    color:#051060
+    color:#051060;
 }
 h3{
   font-family: 'Ultra', serif;
   letter-spacing:3px;
   font-size: 32px;
-    color:#051060
+  color:#051060;
 }
 h4{
   font-family: 'Poppins';
@@ -45,26 +46,80 @@ p{
 }
 
 
-#above-fold{
-  padding-bottom: 200px;
+.above-fold-background{
+  top:0;
+  left:0;
+  position:absolute;
+}
+
+
+
+.rectangle-gradient{
+  width:100%;
+  height:300%;
+  background-color: #53DC5E; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #53DCE5, #19299e, #19299e);
+}
+
+.solid-blue-rectangle-with-1-round-corner{
+  width:95%;
+  height:300%;
+  margin-left:5%;
+  margin-top:5%;
+  background-image: linear-gradient(to bottom, #DCFAFC, #19299E);
+  border-radius: 50% 0% 0% 0%;
+}
+
+.diagonal-diamond-with-2-round-corners{
+  width:95%;
+  height:140%;
+  margin-left:5%;
+  margin-top:5%;
+  background-color:#DCFAFC;
+  border-radius: 50% 0% 50% 0%;
+
+
+}
+
+.diagonal-diamond-glow{
+  width:95%;
+  height:140%;
+  margin-left:5%;
+  margin-top:5%;
+  background-color:#DCFAFC;
+  border-radius: 50% 0% 50% 0%;
+  filter: blur(1600px);
+  filter: drop-shadow(50px 50px 1600px #DCFAFC);
+}
+
+
+
+.above-fold-content{
+  position:relative;
+    padding-bottom: 200px;
+    left:0;
+    top:-300;
+    z-index:1;
 }
 
 .buttonCTA{
   background-color: #ff9062;
   border: none;
   color: #000099;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 32;
   font-family: 'Ultra', serif;
   letter-spacing: 2px;
   padding: 25px;
   padding-left: 50px;
   padding-right: 50px;
+  filter: drop-shadow( 0px, 20px, 30px, #000000 opacity(0.3);)
 
 }
 
 .first-image{
   border-radius: 80px;
+  z-index:2;
 }
 
 .social-icons{
@@ -73,20 +128,22 @@ p{
   color:#051060;
 }
 
-#product-options{
-  background-color:#19299e;
+.product-options{
+  position:relative;
   padding-bottom:200px;
+  z-index:2;
 }
 
 .product-card{
-  margin:30px;
-  padding:20px;
   border-radius:30px;
   background-color:#FFF6EE;
+  margin:30px;
+  padding:20px;
+
 }
 
 .product-card-img{
-  width:100;
+  width:100px;
   aspect-ratio:1;
   margin-bottom:20px;
   border-radius:20px;
@@ -94,25 +151,25 @@ p{
 
 #mid-page-divider{
   padding:0px;
-  background-color: #19299e;
   height:0px;
+  position:relative;
+  top:-170px;
 }
 
 .mid-page-divider-img{
-  postion:absolute;
   width:33%;
-  top:200%
-
+  margin-left:-30px;
+  margin-right:-30px;
 }
 
 #benefits{
-  backgroud-color:#E9f4f6;
-  padding-top:50px;
+  background-color:#E9F4F6;
+  padding-top:100px;
   padding-bottom:50px;
 }
 
 .benefit{
-  margin-top: 50px;
+  padding-top: 50px;
   margin-bottom: 50px;
   height:300px;
 }
@@ -123,12 +180,11 @@ p{
   vertical-align: middle;
 }
 
-.benfits-img{
-  border-radius: 50px;
+.benefits-img{
+  border-radius:50px;
 }
 
 #testimonials{
-  background-color: #000000;
   color:#FFF6EE;
   position:static;
 }
@@ -160,7 +216,6 @@ p{
 .test-quote::before, .test-quote::after{
   content:open-quote;
   font-size: 48px;
-  color:#FFF6EE;
   letter-spacing: 10px;
 }
 
@@ -173,17 +228,7 @@ p{
   background-color: #FF0000;
 }
 
-#press{
-  background-color: #000000;
-  color:#FFF6EE;
-  padding-bottom:5%;
-}
-
-.press-logo{
-  width:100px;
-  height:50px;
-}
 
 #footer{
-  background-color:#00FF00;
+  background-color:#E9F4F6;
 }
